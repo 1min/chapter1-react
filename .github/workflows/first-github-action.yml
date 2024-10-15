@@ -20,3 +20,4 @@ jobs: # jobs들은 병렬적으로 진행됨
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+          echo ${{secrets.MY_SECRET_DATA}}

@@ -14,6 +14,7 @@ jobs: # jobs들은 병렬적으로 진행됨
           echo "Github Action..."
           pwd
           ls -al
+          ls
 
       - name: 02-th Step
         run: echo "GitHub Action..." #실행할 명령어

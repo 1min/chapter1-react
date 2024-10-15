@@ -8,8 +8,12 @@ jobs: # jobs들은 병렬적으로 진행됨
   My-Action-Job:
     runs-on: ubuntu-latest # 우분투에서 동작
     steps:
-      - name: 01-th Step
-        run: echo "Hello World" # 실행할 명령어
+      - name: 01-th Step - Linux 명령어
+        run: | # |쓰면 step안에 여러 run 명령어 사용가능
+          echo "Hello World" # 실행할 명령어
+          echo "Github Action..."
+          pwd
+          ls -al
 
       - name: 02-th Step
         run: echo "GitHub Action..." #실행할 명령어
